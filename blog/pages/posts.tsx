@@ -1,12 +1,10 @@
-import ReactMarkdown from "react-markdown";
-import remarkGfm from "remark-gfm";
-import content from "../posts/temp_post.md";
+import { getStaticPaths } from "@/utils/getStaticPaths";
+import { useMemo } from "react";
 
 const Posts = () => {
-  return (
-    <main>
-      <ReactMarkdown className="prose lg:prose-xl">{content}</ReactMarkdown>
-    </main>
-  );
+  const staticPaths = useMemo(() => {
+    return getStaticPaths();
+  }, []);
+  return <main>{JSON.stringify(staticPaths)}</main>;
 };
 export default Posts;
