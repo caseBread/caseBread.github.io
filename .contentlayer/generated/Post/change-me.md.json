@@ -1,6 +1,11 @@
 {
-  "title": "Change me!",
+  "title": "title1!",
   "date": "2022-03-11T00:00:00.000Z",
+  "tags": [
+    "2021 회고",
+    "회고",
+    "주니어개발자"
+  ],
   "body": {
     "raw": "\nWhen you change a source file, Contentlayer automatically updates the content cache, which prompts Next.js to reload the content on screen.\n",
     "html": "<p>When you change a source file, Contentlayer automatically updates the content cache, which prompts Next.js to reload the content on screen.</p>"

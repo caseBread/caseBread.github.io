@@ -1,0 +1,167 @@
+{
+  "cacheItemsMap": {
+    "change-me.md": {
+      "document": {
+        "title": "title1!",
+        "date": "2022-03-11T00:00:00.000Z",
+        "tags": [
+          "2021 회고",
+          "회고",
+          "주니어개발자"
+        ],
+        "body": {
+          "raw": "\nWhen you change a source file, Contentlayer automatically updates the content cache, which prompts Next.js to reload the content on screen.\n",
+          "html": "<p>When you change a source file, Contentlayer automatically updates the content cache, which prompts Next.js to reload the content on screen.</p>"
+        },
+        "_id": "change-me.md",
+        "_raw": {
+          "sourceFilePath": "change-me.md",
+          "sourceFileName": "change-me.md",
+          "sourceFileDir": ".",
+          "contentType": "markdown",
+          "flattenedPath": "change-me"
+        },
+        "type": "Post",
+        "url": "/_posts/change-me"
+      },
+      "documentHash": "1676712669777",
+      "hasWarnings": false,
+      "documentTypeName": "Post"
+    },
+    "temp.md": {
+      "document": {
+        "title": "title2!",
+        "date": "2023-02-18T00:00:00.000Z",
+        "tags": [
+          "tag1",
+          "tag2"
+        ],
+        "body": {
+          "raw": "",
+          "html": ""
+        },
+        "_id": "temp.md",
+        "_raw": {
+          "sourceFilePath": "temp.md",
+          "sourceFileName": "temp.md",
+          "sourceFileDir": ".",
+          "contentType": "markdown",
+          "flattenedPath": "temp"
+        },
+        "type": "Post",
+        "url": "/_posts/temp"
+      },
+      "documentHash": "1676714039658",
+      "hasWarnings": false,
+      "documentTypeName": "Post"
+    },
+    "temp2.md": {
+      "document": {
+        "title": "title2!",
+        "date": "2023-02-18T00:00:00.000Z",
+        "tags": [
+          "tag1",
+          "tag2"
+        ],
+        "body": {
+          "raw": "",
+          "html": ""
+        },
+        "_id": "temp2.md",
+        "_raw": {
+          "sourceFilePath": "temp2.md",
+          "sourceFileName": "temp2.md",
+          "sourceFileDir": ".",
+          "contentType": "markdown",
+          "flattenedPath": "temp2"
+        },
+        "type": "Post",
+        "url": "/_posts/temp2"
+      },
+      "documentHash": "1676714040575",
+      "hasWarnings": false,
+      "documentTypeName": "Post"
+    },
+    "temp3.md": {
+      "document": {
+        "title": "title2!",
+        "date": "2023-02-18T00:00:00.000Z",
+        "tags": [
+          "tag1",
+          "tag2"
+        ],
+        "body": {
+          "raw": "",
+          "html": ""
+        },
+        "_id": "temp3.md",
+        "_raw": {
+          "sourceFilePath": "temp3.md",
+          "sourceFileName": "temp3.md",
+          "sourceFileDir": ".",
+          "contentType": "markdown",
+          "flattenedPath": "temp3"
+        },
+        "type": "Post",
+        "url": "/_posts/temp3"
+      },
+      "documentHash": "1676714041779",
+      "hasWarnings": false,
+      "documentTypeName": "Post"
+    },
+    "temp4.md": {
+      "document": {
+        "title": "title2!",
+        "date": "2023-02-18T00:00:00.000Z",
+        "tags": [
+          "tag1",
+          "tag2"
+        ],
+        "body": {
+          "raw": "",
+          "html": ""
+        },
+        "_id": "temp4.md",
+        "_raw": {
+          "sourceFilePath": "temp4.md",
+          "sourceFileName": "temp4.md",
+          "sourceFileDir": ".",
+          "contentType": "markdown",
+          "flattenedPath": "temp4"
+        },
+        "type": "Post",
+        "url": "/_posts/temp4"
+      },
+      "documentHash": "1676714042880",
+      "hasWarnings": false,
+      "documentTypeName": "Post"
+    },
+    "temp_post.md": {
+      "document": {
+        "title": "title2!",
+        "date": "2023-02-18T00:00:00.000Z",
+        "tags": [
+          "tag1",
+          "tag2"
+        ],
+        "body": {
+          "raw": "\n# fitst md\n\n## second\n\nhi\n\n**hello~~**\n\n- dot\n  - two dot\n\n21o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y21\n",
+          "html": "<h1>fitst md</h1>\n<h2>second</h2>\n<p>hi</p>\n<p><strong>hello~~</strong></p>\n<ul>\n<li>dot\n<ul>\n<li>two dot</li>\n</ul>\n</li>\n</ul>\n<p>21o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y2121o3h1283y893y21</p>"
+        },
+        "_id": "temp_post.md",
+        "_raw": {
+          "sourceFilePath": "temp_post.md",
+          "sourceFileName": "temp_post.md",
+          "sourceFileDir": ".",
+          "contentType": "markdown",
+          "flattenedPath": "temp_post"
+        },
+        "type": "Post",
+        "url": "/_posts/temp_post"
+      },
+      "documentHash": "1676715146320",
+      "hasWarnings": false,
+      "documentTypeName": "Post"
+    }
+  }
+}
