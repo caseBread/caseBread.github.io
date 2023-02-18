@@ -2,7 +2,92 @@
 @tailwind components;
 @tailwind utilities;
 
+/*
+https://github.com/orioncactus/pretendard
+*/
+
+@font-face {
+  font-family: "Noto Sans KR";
+  font-weight: 900;
+  src: local("Noto Sans KR"),
+    url("./fonts/NotoSansKR-Black.otf") format("opentype");
+}
+@font-face {
+  font-family: "Noto Sans KR";
+  font-weight: 700;
+  src: local("Noto Sans KR"),
+    url("./fonts/NotoSansKR-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "Noto Sans KR";
+  font-weight: 500;
+  src: local("Noto Sans KR"),
+    url("./fonts/NotoSansKR-Medium.otf") format("opentype");
+}
+@font-face {
+  font-family: "Noto Sans KR";
+  font-weight: 400;
+  src: local("Noto Sans KR"),
+    url("./fonts/NotoSansKR-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Noto Sans KR";
+  font-weight: 300;
+  src: local("Noto Sans KR"),
+    url("./fonts/NotoSansKR-Light.otf") format("opentype");
+}
+@font-face {
+  font-family: "Noto Sans KR";
+  font-weight: 100;
+  src: local("Noto Sans KR"),
+    url("./fonts/NotoSansKR-Thin.otf") format("opentype");
+}
+
+/* styles */
+body,
+body[data-theme="dark"] {
+  --bg-main: #111111;
+  --bg-sub: #333333;
+  --bg-a5: rgba(0, 0, 0, 0.5);
+  --bg-a7: rgba(0, 0, 0, 0.7);
+  --tx-main: #eaeaea;
+  --tx-sub: #bdc1c9;
+  --tx-sub-dark: #a6a5a4;
+  --tx-accent: #6667ab;
+  --tx-accent-light: #b2b3d5;
+  --tx-wb: #ffffff;
+}
+
+body[data-theme="light"] {
+  --bg-main: #ffffff;
+  --bg-sub: #f4f4f4;
+  --bg-a5: rgba(255, 255, 255, 0.5);
+  --bg-a7: rgba(255, 255, 255, 0.7);
+  --tx-main: #111111;
+  --tx-sub: #555555;
+  --tx-sub-dark: #333333;
+  --tx-accent: #159eee;
+  --tx-accent-light: #99cfe5;
+  --tx-wb: #000000;
+}
+
+body {
+  --tx-white: #eaeaea;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  min-width: 320px;
+  @apply text-slate-900 dark:text-slate-300 min-h-screen;
+}
+
 @layer base {
+  html {
+    font-family: "Pretendard", system-ui, sans-serif;
+  }
+
   main {
     width: 60%;
 
@@ -17,4 +102,232 @@
       width: 100%;
     }
   }
+}
+
+.prose {
+  max-width: none;
+}
+
+.prose h2 {
+  font-size: 1.8em;
+}
+
+.prose h3 {
+  font-size: 1.5em;
+}
+
+.prose a {
+  color: inherit;
+  @apply underline decoration-sky-500 decoration-2 hover:decoration-sky-800;
+}
+
+.prose p code,
+.prose ul code {
+  @apply text-sky-900 dark:text-sky-100;
+}
+
+.prose :where(pre):not(:where([class~="not-prose"] *)) {
+  @apply bg-white dark:bg-zinc-900;
+  @apply border border-solid border-sky-800 dark:border-sky-100;
+}
+
+.prose img {
+  margin-top: 0;
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+  @apply bg-white dark:bg-zinc-900;
+  @apply text-slate-900 dark:text-slate-300;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  line-height: 1.5;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection,
+pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection,
+code[class*="language-"] ::-moz-selection {
+  color: #fbf1c7;
+  background: #7c6f64;
+}
+
+pre[class*="language-"]::selection,
+pre[class*="language-"] ::selection,
+code[class*="language-"]::selection,
+code[class*="language-"] ::selection {
+  color: #fbf1c7; /* fg0 */
+  background: #7c6f64; /* bg4 */
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: 1em;
+  margin: 8px 0;
+  overflow: auto;
+  font-size: 14px;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  @apply border border-solid border-sky-800 dark:border-sky-100;
+  border-radius: 7px;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: 0.1em;
+  border-radius: 0.3em;
+  font-size: 14px;
+}
+
+.token {
+  font-size: 14px;
+}
+
+.token.comment,
+.token.prolog,
+.token.cdata {
+  color: #808b97;
+}
+
+.token.delimiter,
+.token.boolean,
+.token.keyword,
+.token.selector,
+.token.important,
+.token.atrule {
+  color: #ff7b79;
+}
+
+.token.operator,
+.token.punctuation,
+.token.attr-name {
+  @apply text-slate-900 dark:text-slate-300;
+}
+
+.token.tag,
+.token.tag .punctuation,
+.token.doctype,
+.token.builtin {
+  color: #15a5cf;
+}
+
+.token.entity,
+.token.number,
+.token.symbol {
+  color: #59c0ff;
+}
+
+.token.string,
+.token.char {
+  color: #ffa657;
+}
+
+.token.attr-value,
+.token.attr-value .punctuation {
+  color: #a89984;
+}
+
+.token.url {
+  color: #c0edf6;
+  text-decoration: underline;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+.token.inserted {
+  background: #a89984;
+}
+
+.token.deleted {
+  background: #bb8395;
+}
+
+.code-line {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  font-size: 14px;
+  @apply text-slate-900 dark:text-slate-200;
+}
+
+.rehype-code-title {
+  @apply text-slate-900 dark:text-slate-200;
+  @apply bg-white dark:bg-zinc-900;
+  @apply border border-solid border-sky-800 dark:border-sky-100;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  padding: 5px 16px;
+  font-weight: 700;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.rehype-code-title + pre {
+  margin-top: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-top: 0;
+}
+
+pre {
+  overflow-x: auto;
+}
+
+.code-highlight {
+  float: left; /* 1 */
+  min-width: 100%; /* 2 */
+}
+
+.code-line {
+  display: block;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: -16px;
+  margin-right: -16px;
+  font-size: 14px;
+}
+
+.code-line.inserted {
+  background-color: rgba(16, 185, 129, 0.2); /* Set inserted line (+) color */
+}
+
+.code-line.deleted {
+  background-color: rgba(239, 68, 68, 0.2); /* Set deleted line (-) color */
+}
+
+.highlight-line {
+  margin-left: -16px;
+  margin-right: -16px;
+  background-color: rgba(55, 65, 81, 0.3); /* Set highlight bg color */
+  border-left-width: 4px;
+  font-size: 14px;
+}
+
+.line-number::before {
+  display: inline-block;
+  width: 1rem;
+  text-align: right;
+  margin-right: 16px;
+  margin-left: -8px;
+  color: rgb(156, 163, 175); /* Line number color */
+  content: attr(line);
 }
