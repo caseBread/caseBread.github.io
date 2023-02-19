@@ -5,7 +5,7 @@ const ToTop = () => {
   const [showTopBtn, setShowTopBtn] = useState(false);
 
   const handleFollow = () => {
-    setShowTopBtn(window.pageYOffset > 20);
+    setShowTopBtn(window.pageYOffset > 57);
   };
 
   useEffect(() => {
