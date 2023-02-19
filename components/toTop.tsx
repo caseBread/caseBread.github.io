@@ -10,7 +10,7 @@ const ToTop = () => {
 
   return (
     <button
-      className="fixed bottom-8 right-8 border-2 p-4 rounded-full hover:bg-secondary hover:border-secondary"
+      className="fixed bottom-8 right-8 border-2 p-4 rounded-full bg-white hover:bg-secondary hover:border-secondary z-50"
       onClick={handleTop}
     >
       <AiFillCaretUp />
