@@ -1,10 +1,10 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "devlog",
   "private": true,
-  "homepage": "https://caseBread.github.io/devlog",
+  "homepage": "https://caseBread.github.io",
   "description": "A starter for a blog powered by Gatsby and Markdown",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "kgu0515@gmail.com",
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
