@@ -7,8 +7,8 @@ const HeaderMenus = () => {
       <button>
         <img src="/icon/ic-darkmode-light.svg" alt="다크모드-전환" />
       </button>
-      <Link to="/posts/about">about</Link>
-      <Link to="/posts">posts</Link>
+      <Link to="/about">about</Link>
+      {/* <Link to="/posts">posts</Link> */}
     </div>
   );
 };
