@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 09 Oct 2023 13:46:25 GMT</lastBuildDate><item><title><![CDATA[[TypeScript] 커스텀 훅에서 제너릭 활용해보기]]></title><description><![CDATA[개요 프로젝트를 진행하면서 custom Hook을 사용해야할 일이 있었다. 다양한 곳에서 custom hook을 활용하기 위해선 generic 활용이 필수라는 것을 느꼈고, 학습 후 코드에 적용해보게 되었다. generic은 Java나 C…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/new-beginnings/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/new-beginnings/</guid><pubDate>Mon, 09 Oct 2023 22:07:00 GMT</pubDate><content:encoded>&lt;h2&gt;개요&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 09 Oct 2023 13:54:48 GMT</lastBuildDate><item><title><![CDATA[[TypeScript] 커스텀 훅에서 제너릭 활용해보기]]></title><description><![CDATA[개요 프로젝트를 진행하면서 custom Hook을 사용해야할 일이 있었다. 다양한 곳에서 custom hook을 활용하기 위해선 generic 활용이 필수라는 것을 느꼈고, 학습 후 코드에 적용해보게 되었다. generic은 Java나 C…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/new-beginnings/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/new-beginnings/</guid><pubDate>Mon, 09 Oct 2023 22:07:00 GMT</pubDate><content:encoded>&lt;h2&gt;개요&lt;/h2&gt;
 &lt;p&gt;프로젝트를 진행하면서 custom Hook을 사용해야할 일이 있었다.&lt;/p&gt;
 &lt;p&gt;다양한 곳에서 custom hook을 활용하기 위해선 generic 활용이 필수라는 것을 느꼈고, 학습 후 코드에 적용해보게 되었다.&lt;/p&gt;
 &lt;p&gt;generic은 Java나 C++ 등의 정적타입 언어에서 동적타입 기능을 제공해주는 역할을 하고있기 때문에 정적타입 언어에서 중요한 문법이라고 볼 수 있다.&lt;/p&gt;
@@ -14,7 +14,7 @@
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/devlog/static/2c3bd444e3ee12391014d4bb963869b1/1843f/arrayWrapperExample.png&quot;
+    href=&quot;/static/2c3bd444e3ee12391014d4bb963869b1/1843f/arrayWrapperExample.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -27,12 +27,12 @@
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;arrayWrapperExample&quot;
         title=&quot;&quot;
-        src=&quot;/devlog/static/2c3bd444e3ee12391014d4bb963869b1/f058b/arrayWrapperExample.png&quot;
-        srcset=&quot;/devlog/static/2c3bd444e3ee12391014d4bb963869b1/c26ae/arrayWrapperExample.png 158w,
-/devlog/static/2c3bd444e3ee12391014d4bb963869b1/6bdcf/arrayWrapperExample.png 315w,
-/devlog/static/2c3bd444e3ee12391014d4bb963869b1/f058b/arrayWrapperExample.png 630w,
-/devlog/static/2c3bd444e3ee12391014d4bb963869b1/40601/arrayWrapperExample.png 945w,
-/devlog/static/2c3bd444e3ee12391014d4bb963869b1/1843f/arrayWrapperExample.png 1186w&quot;
+        src=&quot;/static/2c3bd444e3ee12391014d4bb963869b1/f058b/arrayWrapperExample.png&quot;
+        srcset=&quot;/static/2c3bd444e3ee12391014d4bb963869b1/c26ae/arrayWrapperExample.png 158w,
+/static/2c3bd444e3ee12391014d4bb963869b1/6bdcf/arrayWrapperExample.png 315w,
+/static/2c3bd444e3ee12391014d4bb963869b1/f058b/arrayWrapperExample.png 630w,
+/static/2c3bd444e3ee12391014d4bb963869b1/40601/arrayWrapperExample.png 945w,
+/static/2c3bd444e3ee12391014d4bb963869b1/1843f/arrayWrapperExample.png 1186w&quot;
         sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -49,7 +49,7 @@
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/devlog/static/4bc2441ffc27c5de0017533cf43d1313/1843f/img(2).png&quot;
+    href=&quot;/static/4bc2441ffc27c5de0017533cf43d1313/1843f/img(2).png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -62,12 +62,12 @@
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;img 2 &quot;
         title=&quot;&quot;
-        src=&quot;/devlog/static/4bc2441ffc27c5de0017533cf43d1313/f058b/img(2).png&quot;
-        srcset=&quot;/devlog/static/4bc2441ffc27c5de0017533cf43d1313/c26ae/img(2).png 158w,
-/devlog/static/4bc2441ffc27c5de0017533cf43d1313/6bdcf/img(2).png 315w,
-/devlog/static/4bc2441ffc27c5de0017533cf43d1313/f058b/img(2).png 630w,
-/devlog/static/4bc2441ffc27c5de0017533cf43d1313/40601/img(2).png 945w,
-/devlog/static/4bc2441ffc27c5de0017533cf43d1313/1843f/img(2).png 1186w&quot;
+        src=&quot;/static/4bc2441ffc27c5de0017533cf43d1313/f058b/img(2).png&quot;
+        srcset=&quot;/static/4bc2441ffc27c5de0017533cf43d1313/c26ae/img(2).png 158w,
+/static/4bc2441ffc27c5de0017533cf43d1313/6bdcf/img(2).png 315w,
+/static/4bc2441ffc27c5de0017533cf43d1313/f058b/img(2).png 630w,
+/static/4bc2441ffc27c5de0017533cf43d1313/40601/img(2).png 945w,
+/static/4bc2441ffc27c5de0017533cf43d1313/1843f/img(2).png 1186w&quot;
         sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -83,7 +83,7 @@
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/devlog/static/47ea56c63e5e208aefff6c022c0f6689/709cb/img(3).png&quot;
+    href=&quot;/static/47ea56c63e5e208aefff6c022c0f6689/709cb/img(3).png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -96,12 +96,12 @@
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;img 3 &quot;
         title=&quot;&quot;
-        src=&quot;/devlog/static/47ea56c63e5e208aefff6c022c0f6689/f058b/img(3).png&quot;
-        srcset=&quot;/devlog/static/47ea56c63e5e208aefff6c022c0f6689/c26ae/img(3).png 158w,
-/devlog/static/47ea56c63e5e208aefff6c022c0f6689/6bdcf/img(3).png 315w,
-/devlog/static/47ea56c63e5e208aefff6c022c0f6689/f058b/img(3).png 630w,
-/devlog/static/47ea56c63e5e208aefff6c022c0f6689/40601/img(3).png 945w,
-/devlog/static/47ea56c63e5e208aefff6c022c0f6689/709cb/img(3).png 1034w&quot;
+        src=&quot;/static/47ea56c63e5e208aefff6c022c0f6689/f058b/img(3).png&quot;
+        srcset=&quot;/static/47ea56c63e5e208aefff6c022c0f6689/c26ae/img(3).png 158w,
+/static/47ea56c63e5e208aefff6c022c0f6689/6bdcf/img(3).png 315w,
+/static/47ea56c63e5e208aefff6c022c0f6689/f058b/img(3).png 630w,
+/static/47ea56c63e5e208aefff6c022c0f6689/40601/img(3).png 945w,
+/static/47ea56c63e5e208aefff6c022c0f6689/709cb/img(3).png 1034w&quot;
         sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -117,7 +117,7 @@
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/devlog/static/4a7e0f89ae28d724bd7044d79ae8fe81/709cb/img(4).png&quot;
+    href=&quot;/static/4a7e0f89ae28d724bd7044d79ae8fe81/709cb/img(4).png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -130,12 +130,12 @@
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;img 4 &quot;
         title=&quot;&quot;
-        src=&quot;/devlog/static/4a7e0f89ae28d724bd7044d79ae8fe81/f058b/img(4).png&quot;
-        srcset=&quot;/devlog/static/4a7e0f89ae28d724bd7044d79ae8fe81/c26ae/img(4).png 158w,
-/devlog/static/4a7e0f89ae28d724bd7044d79ae8fe81/6bdcf/img(4).png 315w,
-/devlog/static/4a7e0f89ae28d724bd7044d79ae8fe81/f058b/img(4).png 630w,
-/devlog/static/4a7e0f89ae28d724bd7044d79ae8fe81/40601/img(4).png 945w,
-/devlog/static/4a7e0f89ae28d724bd7044d79ae8fe81/709cb/img(4).png 1034w&quot;
+        src=&quot;/static/4a7e0f89ae28d724bd7044d79ae8fe81/f058b/img(4).png&quot;
+        srcset=&quot;/static/4a7e0f89ae28d724bd7044d79ae8fe81/c26ae/img(4).png 158w,
+/static/4a7e0f89ae28d724bd7044d79ae8fe81/6bdcf/img(4).png 315w,
+/static/4a7e0f89ae28d724bd7044d79ae8fe81/f058b/img(4).png 630w,
+/static/4a7e0f89ae28d724bd7044d79ae8fe81/40601/img(4).png 945w,
+/static/4a7e0f89ae28d724bd7044d79ae8fe81/709cb/img(4).png 1034w&quot;
         sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -154,7 +154,7 @@
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/devlog/static/e3e019d75b8565da97f99491d40e1a31/9ce1c/217290650-06df10bd-0810-4f13-b2e0-2bf54a5e96b6.png&quot;
+    href=&quot;/static/e3e019d75b8565da97f99491d40e1a31/9ce1c/217290650-06df10bd-0810-4f13-b2e0-2bf54a5e96b6.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -167,13 +167,13 @@
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;217290650 06df10bd 0810 4f13 b2e0 2bf54a5e96b6&quot;
         title=&quot;&quot;
-        src=&quot;/devlog/static/e3e019d75b8565da97f99491d40e1a31/f058b/217290650-06df10bd-0810-4f13-b2e0-2bf54a5e96b6.png&quot;
-        srcset=&quot;/devlog/static/e3e019d75b8565da97f99491d40e1a31/c26ae/217290650-06df10bd-0810-4f13-b2e0-2bf54a5e96b6.png 158w,
-/devlog/static/e3e019d75b8565da97f99491d40e1a31/6bdcf/217290650-06df10bd-0810-4f13-b2e0-2bf54a5e96b6.png 315w,
-/devlog/static/e3e019d75b8565da97f99491d40e1a31/f058b/217290650-06df10bd-0810-4f13-b2e0-2bf54a5e96b6.png 630w,
-/devlog/static/e3e019d75b8565da97f99491d40e1a31/40601/217290650-06df10bd-0810-4f13-b2e0-2bf54a5e96b6.png 945w,
-/devlog/static/e3e019d75b8565da97f99491d40e1a31/78612/217290650-06df10bd-0810-4f13-b2e0-2bf54a5e96b6.png 1260w,
-/devlog/static/e3e019d75b8565da97f99491d40e1a31/9ce1c/217290650-06df10bd-0810-4f13-b2e0-2bf54a5e96b6.png 1886w&quot;
+        src=&quot;/static/e3e019d75b8565da97f99491d40e1a31/f058b/217290650-06df10bd-0810-4f13-b2e0-2bf54a5e96b6.png&quot;
+        srcset=&quot;/static/e3e019d75b8565da97f99491d40e1a31/c26ae/217290650-06df10bd-0810-4f13-b2e0-2bf54a5e96b6.png 158w,
+/static/e3e019d75b8565da97f99491d40e1a31/6bdcf/217290650-06df10bd-0810-4f13-b2e0-2bf54a5e96b6.png 315w,
+/static/e3e019d75b8565da97f99491d40e1a31/f058b/217290650-06df10bd-0810-4f13-b2e0-2bf54a5e96b6.png 630w,
+/static/e3e019d75b8565da97f99491d40e1a31/40601/217290650-06df10bd-0810-4f13-b2e0-2bf54a5e96b6.png 945w,
+/static/e3e019d75b8565da97f99491d40e1a31/78612/217290650-06df10bd-0810-4f13-b2e0-2bf54a5e96b6.png 1260w,
+/static/e3e019d75b8565da97f99491d40e1a31/9ce1c/217290650-06df10bd-0810-4f13-b2e0-2bf54a5e96b6.png 1886w&quot;
         sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -189,7 +189,7 @@
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/devlog/static/a734caf5e4874c1321398ecda26ee47b/b1ffc/img(5).png&quot;
+    href=&quot;/static/a734caf5e4874c1321398ecda26ee47b/b1ffc/img(5).png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -202,13 +202,13 @@
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;img 5 &quot;
         title=&quot;&quot;
-        src=&quot;/devlog/static/a734caf5e4874c1321398ecda26ee47b/f058b/img(5).png&quot;
-        srcset=&quot;/devlog/static/a734caf5e4874c1321398ecda26ee47b/c26ae/img(5).png 158w,
-/devlog/static/a734caf5e4874c1321398ecda26ee47b/6bdcf/img(5).png 315w,
-/devlog/static/a734caf5e4874c1321398ecda26ee47b/f058b/img(5).png 630w,
-/devlog/static/a734caf5e4874c1321398ecda26ee47b/40601/img(5).png 945w,
-/devlog/static/a734caf5e4874c1321398ecda26ee47b/78612/img(5).png 1260w,
-/devlog/static/a734caf5e4874c1321398ecda26ee47b/b1ffc/img(5).png 1492w&quot;
+        src=&quot;/static/a734caf5e4874c1321398ecda26ee47b/f058b/img(5).png&quot;
+        srcset=&quot;/static/a734caf5e4874c1321398ecda26ee47b/c26ae/img(5).png 158w,
+/static/a734caf5e4874c1321398ecda26ee47b/6bdcf/img(5).png 315w,
+/static/a734caf5e4874c1321398ecda26ee47b/f058b/img(5).png 630w,
+/static/a734caf5e4874c1321398ecda26ee47b/40601/img(5).png 945w,
+/static/a734caf5e4874c1321398ecda26ee47b/78612/img(5).png 1260w,
+/static/a734caf5e4874c1321398ecda26ee47b/b1ffc/img(5).png 1492w&quot;
         sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -224,7 +224,7 @@
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/devlog/static/5c568dfe898382e041d56448d45c304a/58a91/2.png&quot;
+    href=&quot;/static/5c568dfe898382e041d56448d45c304a/58a91/2.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -237,13 +237,13 @@
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;2&quot;
         title=&quot;&quot;
-        src=&quot;/devlog/static/5c568dfe898382e041d56448d45c304a/f058b/2.png&quot;
-        srcset=&quot;/devlog/static/5c568dfe898382e041d56448d45c304a/c26ae/2.png 158w,
-/devlog/static/5c568dfe898382e041d56448d45c304a/6bdcf/2.png 315w,
-/devlog/static/5c568dfe898382e041d56448d45c304a/f058b/2.png 630w,
-/devlog/static/5c568dfe898382e041d56448d45c304a/40601/2.png 945w,
-/devlog/static/5c568dfe898382e041d56448d45c304a/78612/2.png 1260w,
-/devlog/static/5c568dfe898382e041d56448d45c304a/58a91/2.png 1990w&quot;
+        src=&quot;/static/5c568dfe898382e041d56448d45c304a/f058b/2.png&quot;
+        srcset=&quot;/static/5c568dfe898382e041d56448d45c304a/c26ae/2.png 158w,
+/static/5c568dfe898382e041d56448d45c304a/6bdcf/2.png 315w,
+/static/5c568dfe898382e041d56448d45c304a/f058b/2.png 630w,
+/static/5c568dfe898382e041d56448d45c304a/40601/2.png 945w,
+/static/5c568dfe898382e041d56448d45c304a/78612/2.png 1260w,
+/static/5c568dfe898382e041d56448d45c304a/58a91/2.png 1990w&quot;
         sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -261,7 +261,7 @@
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/devlog/static/a734caf5e4874c1321398ecda26ee47b/b1ffc/img(6).png&quot;
+    href=&quot;/static/a734caf5e4874c1321398ecda26ee47b/b1ffc/img(6).png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -274,13 +274,13 @@
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;img 6 &quot;
         title=&quot;&quot;
-        src=&quot;/devlog/static/a734caf5e4874c1321398ecda26ee47b/f058b/img(6).png&quot;
-        srcset=&quot;/devlog/static/a734caf5e4874c1321398ecda26ee47b/c26ae/img(6).png 158w,
-/devlog/static/a734caf5e4874c1321398ecda26ee47b/6bdcf/img(6).png 315w,
-/devlog/static/a734caf5e4874c1321398ecda26ee47b/f058b/img(6).png 630w,
-/devlog/static/a734caf5e4874c1321398ecda26ee47b/40601/img(6).png 945w,
-/devlog/static/a734caf5e4874c1321398ecda26ee47b/78612/img(6).png 1260w,
-/devlog/static/a734caf5e4874c1321398ecda26ee47b/b1ffc/img(6).png 1492w&quot;
+        src=&quot;/static/a734caf5e4874c1321398ecda26ee47b/f058b/img(6).png&quot;
+        srcset=&quot;/static/a734caf5e4874c1321398ecda26ee47b/c26ae/img(6).png 158w,
+/static/a734caf5e4874c1321398ecda26ee47b/6bdcf/img(6).png 315w,
+/static/a734caf5e4874c1321398ecda26ee47b/f058b/img(6).png 630w,
+/static/a734caf5e4874c1321398ecda26ee47b/40601/img(6).png 945w,
+/static/a734caf5e4874c1321398ecda26ee47b/78612/img(6).png 1260w,
+/static/a734caf5e4874c1321398ecda26ee47b/b1ffc/img(6).png 1492w&quot;
         sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
