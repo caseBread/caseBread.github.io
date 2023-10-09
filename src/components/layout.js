@@ -1,18 +1,16 @@
-import * as React from "react"
-import { Link } from "gatsby"
+import * as React from "react";
+import { Link } from "gatsby";
+import Header from "./header";
 
 const Layout = ({ location, title, children }) => {
-  const rootPath = `${__PATH_PREFIX__}/`
-  const isRootPath = location.pathname === rootPath
-  let header
-
-  header = (
-    <div className="text-center py-[10px] fixed w-full ">this is header</div>
-  )
+  const rootPath = `${__PATH_PREFIX__}/`;
+  const isRootPath = location.pathname === rootPath;
 
   return (
     <>
-      <header className="global-header flex justify-center">{header}</header>
+      <header className="global-header flex justify-center">
+        <Header />
+      </header>
       <div className="global-wrapper" data-is-root-path={isRootPath}>
         <main>{children}</main>
         <footer>
@@ -22,7 +20,7 @@ const Layout = ({ location, title, children }) => {
         </footer>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
