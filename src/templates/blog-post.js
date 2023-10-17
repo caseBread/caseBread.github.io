@@ -19,7 +19,10 @@ const BlogPostTemplate = ({
         itemType="http://schema.org/Article"
       >
         <header className="pb-4 mb-4 border-b-1">
-          <h1 className="text-4xl font-semibold" itemProp="headline">
+          <h1
+            className="text-4xl font-semibold text-gray-900"
+            itemProp="headline"
+          >
             {post.frontmatter.title}
           </h1>
           <p>{post.frontmatter.date}</p>
